@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: usha43/backend:{{ .Value.deployment.version }}
+        image: usha43/backend:{{ .Values.deployment.version }}
         envFrom:
         - configMapRef:
             name: backend
